@@ -16,7 +16,11 @@ public class Funcionario{
 	}
 
 	public double calcularPagamento(){
-		return horasTrabalhadas*valorHora*4;  
+		double salario = horasTrabalhadas*valorHora*4;
+		if (salario < 1212) {
+			throw new IllegalArgumentException("Salario Invalido");
+			}
+		return salario;  
 	}
 	
 	public void setHorasTrabalhadas(int horasTrabalhadas) {
