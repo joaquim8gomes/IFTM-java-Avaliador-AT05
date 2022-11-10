@@ -132,7 +132,7 @@ public class FuncionarioTest {
 		double valorHoraObtido = func.getValorHora();
 		double salarioObtido = func.calcularPagamento();
 
-		//comparação
+		//comparaçã
 		Assertions.assertEquals(valorHoraValido, valorHoraObtido);
 	}
 	
